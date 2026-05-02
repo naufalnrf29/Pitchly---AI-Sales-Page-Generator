@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -r \"echo storage_path\\('app/cacert.pem'\\) . PHP_EOL;\")",
+      "Bash(php artisan *)"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer create-project *)",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(php artisan *)",
+      "Bash(mysql --version)",
+      "Read(//c/xampp//**)",
+      "Read(//c//**)",
+      "PowerShell(& \"C:\\\\xampp\\\\mysql_start.bat\" 2>&1)",
+      "Bash(/c/xampp/mysql/bin/mysql.exe -u root -e \"CREATE DATABASE IF NOT EXISTS ai_sales_page CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\")",
+      "Bash(/c/xampp/mysql/bin/mysqld.exe --version)",
+      "PowerShell(Start-Process \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" -ArgumentList \"--defaults-file=C:\\\\xampp\\\\mysql\\\\bin\\\\my.ini\" -WindowStyle Hidden; Start-Sleep -Seconds 8; & \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" -u root -e \"SELECT 1;\" 2>&1)",
+      "PowerShell(netstat *)",
+      "Bash(/c/xampp/mysql/bin/mysql.exe -u root -P 3307 -h 127.0.0.1 -e \"SELECT 'connected';\")",
+      "Bash(/c/xampp/mysql/bin/mysql.exe *)",
+      "Bash(composer require *)",
+      "PowerShell(Start-Process \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" -ArgumentList \"--defaults-file=C:\\\\xampp\\\\mysql\\\\bin\\\\my.ini\", \"--standalone\" -WindowStyle Hidden; Start-Sleep -Seconds 6; & \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" -u root -P 3307 -h 127.0.0.1 -e \"SELECT 'ok';\" 2>&1)",
+      "PowerShell(Start-Process \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" -ArgumentList \"--defaults-file=C:\\\\xampp\\\\mysql\\\\bin\\\\my.ini\", \"--standalone\" -WindowStyle Hidden; Start-Sleep -Seconds 10; & \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" -u root -P 3307 -h 127.0.0.1 -e \"SELECT 'ok';\" 2>&1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
+      "Bash(curl -s -o /dev/null -w \"login: %{http_code}\\\\n\" http://localhost:8000/login)",
+      "Bash(curl -s -o /dev/null -w \"register: %{http_code}\\\\n\" http://localhost:8000/register)",
+      "Bash(curl -s -o /dev/null -w \"sales-pages \\(unauth\\): %{http_code}\\\\n\" http://localhost:8000/sales-pages)",
+      "Bash(php -l app/Services/SalesPageService.php)",
+      "Bash(php -l app/Http/Controllers/SalesPageController.php)",
+      "Bash(curl *)",
+      "PowerShell(Start-Process \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" --standalone; Start-Sleep 5; Get-Process mysqld -ErrorAction SilentlyContinue | Select-Object Id, ProcessName)",
+      "Bash(\"C:/xampp/mysql/bin/mysql.exe\" -h 127.0.0.1 -P 3307 -u root -e \"SHOW DATABASES;\")",
+      "Bash(php -r ' *)"
+    ]
+  }
+}
